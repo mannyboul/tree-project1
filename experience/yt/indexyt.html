@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="witdh=device-width, initial-scale=1"
+        <meta name="description" content="This is an awesome website">
+        <title>Manuels Website</title>
+    </head>
+    <header>
+      <nav>
+        <table>
+          <tr>
+            <td><a href="pages/page1.html"><h4>Page One</h4></td></a>
+            <td><a href="pages/pages2.html"><h4>Page Two</h4></td></a>
+            <td><a href="pages/page3.html"><h4>Page Three</h4></td></a>
+          </tr>
+        </table>
+      </nav>
+    </header>
+    <body>
+      <main>
+        <h1>Manuel's Website</h1>
+        <article>
+          <section>
+            <ul>
+              <caption><h2>My Links</h2></caption>
+              <li><a href="https://www.youtube.com/channel/UC27OXnUbYDl6OVH4YO4nHgw" target="_blank"><h3>YouTube channel.</h3></a></li>
+              <li><a href="manuel-robles.pdf" target="_blank"><h3>Resume.</h3></a></li>
+            </ul>
+          <section>
+            <hr/>
+            <br/>
+            <h2>Basic Tags</h2>
+            <p>Using tags "h1" - "h6" create a header. 1 being the largest and 6being the smallest.</p>
+            <p><big>This</big> is My <i><b>Paragraph</b></i>.</p>
+            <p>The "big" tag can emphisize words by making them slightly larger then the rest of the text. To bold text enclose it in the "b" tag. To italicize words enlose it in the "i" tag.</p>
+            <p>H<sub>2</sub>0</p>
+            <p>Using the "sub" tag slighlty lowers characters below the rest if enclosed in the tag.</p>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Style & Colors</h2>
+            <p style="color: blue;">You can style text by addingp style=''color: blue;'' to your paragraph tag.</p>
+            <p style="color: White; background-color:blue">Also by using thesame tag as the last one replace color with background-color oradd it right after you can change the background color.</p>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Formating a Page</h2>
+            <p>Tags to format and layout content into different sections.</p>
+            <p>Header, Main, Footer are the basic 3 sections.</p>
+            <p>To make a navigation tag you need to insert "nav" into the "header" tag.</p>
+            <p>"article" tags serve the same purpose as a paragraph tag but it acts as a section. It should probably be inside the 'main' tag.</p>
+            <p>"section" tag helps split parts of your website or article into specific sections. It should be used inside the article tag with a header tag as well.</p>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Links</h2>
+            <p>About using links so users can interact with them.</p>
+            <p>Use a tag called "a" with "href=""" at the end. Inside the quotes you can add a link that isnt on our website</p>
+            <a href="https://www.google.com"><h3><b>Google's Homepage</b></h3></a>
+            <p>Link text by just attaching words right next to link string</p>
+            <p>To make it so it will open in another tab is by giving the a tag another attribute. after the quotations of your link add "target="_blank">. _blank being a new blank tab.</p>
+            <a href="https://www.google.com" target="_blank"><h4>Google's Homepage</h4></a>
+            <p>Now to link to a page you created for your website just type in the filename of your created page into the quotations of the srting</p>
+            <a href="pages/page1.html"><h3>Page One</h3></a>
+            <a href="pages/page2.html"><h3>Page Two</h3></a>
+            <a href="pages/page3.html"<h3>Page Three</h3></a>
+            <p>To go back home you need the directory from your pc. Mine would be file:///C:/Users/manny/Desktop/mr-site/index.html inside the quotation marks.</p>
+            <p>This works the same way to LINK pictures</p>
+            <a href="file:///C:/Users/manny/Desktop/download.jpg" target="_blank"><h3>Pic</h3><a/>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Links</h2>
+            <p>Putting images directly on website.</p>
+            <p>To do this we cam use the "img" tag. it needs information such as the location fo the image or the "source". "img scr=""" is what it should look like. Insert image location in
+               between the quotations.</p>
+            <img src="https://media.istockphoto.com/photos/basketball-picture-id170096587" alt="basketball"></img>
+            <p>If the image cannot be found you can attatch the "alt" tag to display text instead of the image to describe the image or say it cannot be loaded</p>
+            <p>To display images on your device just add teh file location instead of a link</p>
+            <p>This image is clearly to big so to resize an image add width="" and height="" to the front off the "img" tag and add the pixels.</p>
+            <img width="300" height="300" src="https://media.istockphoto.com/photos/basketball-picture-id170096587" alt="Basketball"></img>
+            <p>You can add a link ontop of an image by adding an "a href=""" AROUND the "img" string so its inside.</p>
+            <a href="https://media.istockphoto.com/photos/basketball-picture-id170096587" target="_blank">
+              <img width="300" height="300" src="https://media.istockphoto.com/photos/basketball-picture-id170096587" alt="Basketball"></img><a/>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Videos & YouTube iFrames</h2>
+            <p>Just like the "img" tag we can use a "video" tag with src at the end to insert a video</p>
+            <p>File location or link is reqired as well</p>
+            <video width="600" src="F:\Clips\Rocket League\rlwebsite.mp4">Rocket League Clip</video>
+            <p>When addded the video will not play. So add controls to the video with the "control" tag at the end of the quotes</p>
+            <video width="600" src="F:\Clips\Rocket League\rlwebsite.mp4" controls>Rocket League Clip</video>
+            <p>Using the width and height tags contol size of video like the img tag</p>
+            <p>You can add a thumbnail to the video with the "poster" tag. "poster="FILE LOCATION HERE"" is what it should look like.</p>
+            <p>To autoplay a video add the "autoplay" tag anywhere outside of quotations</p>
+            <p>For loops when the video ends add the "loop" tag.</p>
+            <p>Youtube videos can be added by embedding them. Hit the share button on youtbe and copy the embedded code that it gives you and paste it where you want your video.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vB4bSDznwgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Lists</h2>
+            <p> "ul" tag is to create an unordered list. For each item in a list you have to use the "li" tag with a close tag for each item.</p>
+            <ul>
+              <li>Apples</li>
+              <li>Oranges</li>
+              <li>Bananas</li>
+            </ul>
+            <p>Using the < a href="" > tag from before we can add links to any word or character by adding  it after your main tag. In this case our main tag is < li > like shown below.</p>
+            <ul>
+              <li><a href="https://google.com" target="_blank">Google</li><a/>
+            </ul>
+            <p>For an orderlist use "ol" instead of "ul".</p>
+            <ol>
+              <li>Apples</li>
+              <li>Oranges</li>
+              <li>Bananas</li>
+            </ol>
+            <p>To choose which characters the list is ordered by use the "type="">"" tag like this < ol type="A" > A will use uppercase letters. a will have lowercase letters. 1 will use numbers. I will use roman numerals</p>
+            <p> you can add lists inside of lists by following the same structure.</p>
+            <ul>
+              <li>Apples
+                <ol type="A">
+                  <li>Like This</li>
+                </ol>
+              </li>
+              <li>Oranges</li>
+              <li>Bananas</li>
+            </ul>
+            <p>Another type of list is a description list which you can use to ilst things and describe them with the < dl > tag.</p>
+            <p>For this the child tags will be < dt > and then < dd > to describe them.</p>
+            <dl>
+              <dt><b><i>Apples</i></b></dt>
+              <dd>- They are red.</dd>
+            <dl>
+            <hr/>
+            <br/>
+          <section/>
+
+          <section>
+            <h2>Tables</h2>
+
+            <p>Bassically formating information and displaying it nicely into tables < table >.</p>
+            <p>Use < tr > to represent a horizontal table row.</p>
+            <p>To enter data use < td > for table data.</p>
+            <table border="10" cellpadding="10" cellspacing="0">
+              <tr>
+                <th>Rent</th>
+                <th>Food</th>
+                <th>Gym</th>
+              </tr>
+              <tr>
+                <td>$1400</td>
+                <td>$100</td>
+                <td>$10</td>
+              </tr>
+            </table>
+            <p>To add names to the rows add a table header with the < th > instead of < td >.</p>
+            <p>To have a overall name or description of thetabe add the < caption > tag after the < table > tag.</p>
+            <table>
+              <thead>
+                <caption>List of Numbers</caption>
+                <tr>
+                  <th>num1</th>
+                  <th>num2</th>
+                  <th>num3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>one</td>
+                  <td>two</td>
+                  <td>three</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Divs & Spans</h2>
+            <p>Block elements take up the entire page width of the page even if theres enough room for ir to go there. Like the paragrphs all throughout this page</p>
+            <p>An inline element only takes up the amount of space that is needed. They can sit next to eachother like these links</p>
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <p>Spans < span > are inline.</p>
+            <span><b>span1</b></span>
+            <span><b>span2</b></span>
+            <p>Divs < div > are blocks.
+            <div><b>div1</b></div>
+            <div><b>div2</b></div>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Input & Forms</h2>
+            <p>Input tags are goingt to allow elements on your page where users can interact like text boxes and things like that.</p>
+            <p>To do that we can use the < input type="X" /> tag.</p>
+            <p>This first one will use "text".</p>
+            <input type="text"/>
+            <p>This one uses "password" so it wont display the characters beign typed.</p>
+            <input type="password"/>
+            <p>To show text prefilled text in the box you can add a "value=""" tag to the end.</p>
+            <input type="text" value="Enter Username Here"/>
+            <p>To add a large input area we can use < textarea >.</p>
+            <textarea>
+            </textarea>
+            <p>You can specify the size of the text area by adding the "rows" and/or "cols" tags.</p>
+            <textarea rows="10" cols="30">
+            </textarea>
+            <p>This is type="date"</p>
+            <input type="date"/>
+            <p>"email" looks the same as text</p>
+            <input type="email"/>
+            <p>"range" is a slider</p>
+            <input type="range"/>
+            <p>"file" lets you upload a file.</p>
+            <input type="file"/>
+            <p>"checkbox"</p>
+            <input type="checkbox"/>
+            <p>"radio" is like a checkbox but you cant uncheck it. Only choose one at a time by using the "name="btn". If they both have the same name you can only choose one at a time.</p>
+            <input name="btn" type="radio"/>
+            <input name="btn" type="radio"/>
+            <p>type="submit"</p>
+            <input type="submit"/>
+            <p>To organize your inputs put them inside a < form > open and closing tag.</p>
+            <form>
+              <input type="color"/>
+            </form>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>iFrames</h2>
+            <p>Lets you display websites inide of your webpage by embedding.</p>
+            <p>< iframe src="X">Text to display if user cant see iframes</ ifrmae >.</p>
+            <iframe src="https://giraffeacademy.com/">Sorry</iframe>
+            <p>Can also use width and height tags to adjust size of window</p>
+            <iframe src="https://giraffeacademy.com/" width="1000" height="800">Sorry</iframe>
+            <p>to remove border use "frameborder="0"".</p>
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Meta Tags</h2>
+            <p>Meta tags live in the 'head' of the html file and the head is to define information about the file.</p>
+            <p>Metadata is data about data.</p>
+            <meta name="decription" content="Your description">
+            <p>< meta name="decription" content="Your description"/> is the full description of website which is used by search engines in order to help figure out what your website is about and find where it should sit in search rankings 160 characters is a good amount for description</p>
+            <meta name="Author" content="Manny">
+            <meta name="keywords" content="HTML, Resuem, Developer">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <hr/>
+            <br/>
+          </section>
+
+          <section>
+            <h2>Footer</h2>
+            <p>
+
+
+
+
+
+
+
+
+        </article>
+      </main>
+
+    </body>
+
+    <body>
+
+    </body>
+
+
+</html>
+
+<!-- https://www.youtube.com/watch?v=pQN-pnXPaVg&t=1850 helped me make this!-->
